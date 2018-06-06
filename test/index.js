@@ -7,8 +7,10 @@ let server = require('../app');
 
 chai.use(chaiHttp);
 
+/*eslint-disable */
 describe('Node Server', () => {  
 	it('(GET /) returns the homepage', (done)=> {
+		/*eslint-enable */
 		chai.request(server)
 			.get('/')
 			.end( (err, res) => {
